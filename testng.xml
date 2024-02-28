@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="4">
+
+
+        <test name="Chrome Test">
+            <parameter name="browser" value="Chrome"></parameter>
+            <parameter name="version" value="88.0"></parameter>
+            <parameter name="platform" value="Windows 10"></parameter>
+            <classes>
+                <class name="Test_Scenario_1" />
+            </classes>
+        </test>
+
+    <test name="Safari Test">
+        <parameter name="browser" value="Safari"></parameter>
+        <parameter name="version" value="87.0"></parameter>
+        <parameter name="platform" value="macOS Sierra"></parameter>
+        <classes>
+            <class name="Test_Scenario_1" />
+        </classes>
+    </test>
+
+
+    <test name="Firefox">
+        <parameter name="browser" value="Firefox"></parameter>
+        <parameter name="version" value="82.0"></parameter>
+        <parameter name="platform" value="Windows 7"></parameter>
+        <classes>
+            <class name="Test_Scenario_1" />
+        </classes>
+    </test>
+
+
+    <test name="Internet Explorer">
+        <parameter name="browser" value="Internet Explorer"></parameter>
+        <parameter name="version" value="11.0 "></parameter>
+        <parameter name="platform" value="Windows 10"></parameter>
+        <classes>
+            <class name="Test_Scenario_1" />
+        </classes>
+    </test>
+</suite>
